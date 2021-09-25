@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="conversor-moedas.css">
+    <script type="text/javascript" src="conversor-moedas.js"></script>
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">CONVERSOR DE MOEDAS</h1>
+        <h2>BRL <span id="img-arrow">&#8594;</span> USD</h2>
+        <span class="value-insertion" place >Quantidade</span>
+        <input id="real-value" type="text" class="value-input" placeholder="Ex.: 500,00">
+        <span class="exchange-rate">Cotação</span>
+        <input id="dollar-value" type="text" class="value-input" placeholder="Ex.: 5.00">
+        <form>
+            <input type="button" id="convert" value="Converter" onclick="conversion();">
+            <input type="button" id="clean" value="Limpar" onclick="clearValues();">
+        </form>
+        <input id="result" type="text" class="value-input" disabled></input>
+    </div>
+</body>
+</html>

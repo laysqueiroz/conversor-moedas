@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --linear-gradient: linear-gradient(120deg, #ae307a, #473a65);
+  --purple: #47406c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--linear-gradient);
+}
+
+.container {
+  width: 300px;
+  height: 450px;
+  padding: 0px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 6px 6px 6px rgba(0,0,0,0.20);
+}
+
+.page-title {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 19.5px;
+  text-align: center;
+  color: var(--purple);
+}
+
+h2 {
+  font-size: 17px;
+  margin: 8px;
+  text-align: center;
+  color: var(--purple);
+}
+
+#img-arrow {
+  color: var(--purple);
+}
+
+.exchange-rate, .value-insertion {
+  padding: 13px 0px;
+  font-size: 15px;
+  color: var(--purple);
+}
+
+.value-input {
+  padding: 13px;
+  padding-left: 15px;
+  border: unset;
+  border-radius: 40px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.20);
+  font-size: 15px;
+  color: var(--purple);
+  background-color: var(--white);
+}
+
+#convert, #clean {
+  padding: 13px;
+  width: 117.8px;
+  margin: 20px 0px 12px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+#convert:active, #clean:active {
+  color: var(--purple);
+  background: var(--white);
+  box-shadow: 0 6px 6px rgba(0,0,0,0.20);
+}
+
+#result {
+  color: var(--purple);
+  padding-left: 15px;
+}
